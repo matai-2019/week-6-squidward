@@ -1,9 +1,21 @@
 import React from 'react'
+import data from '../../data/colors'
+const { colors } = data
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+class App extends React.Component {
+
+  randomColor = () => {
+    const i = Math.floor((Math.random() * colors.length))
+    return colors[i]
+  }
+
+  render () {
+    return (
+    <>
+    <h1>Wardrobe Dilema</h1>
+    </>
+    )
+  }
 }
 
 export default App
