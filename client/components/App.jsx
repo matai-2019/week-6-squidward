@@ -61,7 +61,7 @@ class App extends React.Component {
       shoes } = this.state
     return (
       <>
-        <h1 style={{ display: 'flex', justifyContent: 'center' }} className="title is-1" >Wardrobe Dilemma</h1>
+        <h1 style={{ display: 'flex', justifyContent: 'center', textAlign: 'center' }} className="title is-1" >Wardrobe Dilemma</h1>
         <div className="row is-flex">
           {this.props.isWaiting ? <WaitIndicator /> : <>
             <SuitContainer>
