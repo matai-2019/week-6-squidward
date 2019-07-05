@@ -8,7 +8,11 @@ class SuitContainer extends React.Component {
   }
 
   render () {
-    return <div className = 'SuitContainer'></div>
+    return (
+      <div className='column is-half svgContainer'>
+        {this.props.children}
+      </div>
+    )
   }
 }
 
