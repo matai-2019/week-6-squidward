@@ -1,6 +1,12 @@
 import React from 'react'
 
 export default function Buttons (props) {
+  const handleSuit = () => {
+    const i = Math.floor((Math.random() * 15))
+    props.randomColor('jacket', i)()
+    props.randomColor('trousers', i)()
+  }
+
   return (
     <div className="column is-half">
       <div className="container controller">
@@ -10,6 +16,7 @@ export default function Buttons (props) {
         <button className='button is-success' onClick={ props.randomColor('tie')} name="Tie">Tie</button>
         <button className='button is-success' onClick={ props.randomColor('trousers')} name="Trousers">Trousers</button>
         <button className='button is-success' onClick={ props.randomColor('shoes')} name="Shoes">Shoes</button>
+        <button className='button is-success' onClick={handleSuit} name='Suit'>Suit</button>
       </div>
     </div>
   )
