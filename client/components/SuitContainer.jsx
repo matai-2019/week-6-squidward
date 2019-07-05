@@ -1,20 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { getColors } from '../actions'
 
-const SuitContainer = ({ children }) => {
-  // const ref = useRef(null)
+class SuitContainer extends React.Component {
+  componentDidMount () {
+    this.props.dispatch(getColors())
+  }
 
-  // useEffect(() => {
-  //   return () => {
-  //     effect
-  //   }
-  // }, [input])
-
-  return (
-    <div className='column is-half svgContainer'>
-      {children}
-    </div>
-  )
+  render () {
+    return (
+      <div className='column is-half svgContainer'>
+        {this.props.children}
+      </div>
+    )
+  }
 }
 
-export default SuitContainer
+export default connect()(SuitContainer)

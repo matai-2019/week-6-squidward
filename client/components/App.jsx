@@ -7,6 +7,7 @@ import Shoes from './Shoes'
 import SuitContainer from './SuitContainer'
 import Buttons from './Buttons'
 import data from '../../data/colors'
+
 const { colors } = data
 const colour = '#116611'
 
@@ -31,7 +32,7 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <h1 className="title is-1" >Wardrobe Dilema</h1>
+        <h1 className="title is-1" >Wardrobe Dilemma</h1>
         <div className="row is-flex">
           <SuitContainer>
             <Jacket darkenColour={this.darkenColour} colour={colour} />
