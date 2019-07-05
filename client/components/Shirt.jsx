@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Jacket ({ colour, darkenColour }) {
+export default function Jacket ({ colour, darkenColour, size }) {
   return <>
-    <svg width="564" height="564" version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size} height={size} version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
       <g>
-        <g fill="#FFF" stroke="#000" strokeWidth="1px">
+        <g fill={colour} stroke="#000" strokeWidth="1px">
           <path d="m187.88 261.5h23.25v4.875h-23.125z" />
           <path d="m356.44 260.88h23v5.625h-23z" />
           <path d="m266 30.875 36.5-0.375z" />

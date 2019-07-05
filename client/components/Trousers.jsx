@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Pants ({ colour, darkenColour }) {
+export default function Trousers ({ colour, darkenColour, size }) {
   const shaded = darkenColour(colour)
   const darker = darkenColour(shaded)
   return <>
-    <svg width="564" height="564" version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size} height={size} version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
       <g stroke="#000" strokeWidth="1px">
         <path fill={colour} d="m226.43 283.61 2.7092 96.642-0.51776 50.863-0.0486 56.066-0.20178 37.796 12.63 9.4516 5.4732-252.51z" />
         <path fill={darker} d="m332.91 535.32 15.845-7.6841-4.7982-104.8-1.2627-80.812-0.25254-59.094-21.971 3.0305" />
