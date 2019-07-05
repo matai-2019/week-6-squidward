@@ -44,6 +44,7 @@ class App extends React.Component {
     const i = Math.floor((Math.random() * colorArr.length))
     const newState = {}
     newState[key] = colorArr[i]
+
     this.setState(
       newState
     )
