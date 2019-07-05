@@ -31,7 +31,7 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <h1>Wardrobe Dilema</h1>
+        <h1 className="title is-1" >Wardrobe Dilema</h1>
         <div className="row is-flex">
           <SuitContainer>
             <Jacket darkenColour={this.darkenColour} colour={colour} />
