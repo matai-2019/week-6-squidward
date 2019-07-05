@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Shoes ({ colour, darkenColour }) {
+export default function Shoes ({ colour, darkenColour, size }) {
   const shaded = darkenColour(colour)
   return <>
-    <svg width="564" height="564" version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
+    <svg width={size} height={size} version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
       <g stroke="#000" strokeWidth='1px'>
         <g transform="matrix(-.67137 0 0 .55898 620.43 -35.117)">
           <path fill={colour} d="m558.57 1025.2-12.5 12.679-5 9.4643-0.53572 11.428 3.3929 1.9643 22.857 1.6072 24.107-0.7143 3.3928-1.25-1.0714-10.714-5.8288-8.0366-7.3855-2.8563-13.75-13.571-0.53571-13.393-10.357-1.0714z" />
