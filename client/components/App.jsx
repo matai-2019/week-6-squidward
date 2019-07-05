@@ -9,7 +9,6 @@ import Trousers from './Trousers'
 import Shoes from './Shoes'
 import SuitContainer from './SuitContainer'
 import Buttons from './Buttons'
-// import data from '../../data/colors'
 
 import { getColors } from '../actions'
 
@@ -44,6 +43,7 @@ class App extends React.Component {
     const i = Math.floor((Math.random() * colorArr.length))
     const newState = {}
     newState[key] = colorArr[i]
+
     this.setState(
       newState
     )
@@ -71,7 +71,7 @@ class App extends React.Component {
               <Trousers size={size} darkenColour={this.darkenColour} colour={trousers} />
               <Shoes darkenColour={this.darkenColour} size={size} colour={shoes} />
             </SuitContainer>
-          <Buttons />
+          <Buttons randomColor={this.randomColor}/>
           </>
           }
         </div>
