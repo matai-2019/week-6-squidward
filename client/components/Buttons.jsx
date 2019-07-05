@@ -1,5 +1,4 @@
 import React from 'react'
-import Jacket from './Jacket'
 
 export default function Buttons (props) {
   return (

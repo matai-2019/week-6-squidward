@@ -20,6 +20,6 @@ export const receiveColors = colors => {
 export const getColors = () => {
   return dispatch => {
     dispatch(requestColors())
-    setTimeout(() => dispatch(receiveColors()), 5000)
+    setTimeout(() => dispatch(receiveColors()), 3000)
   }
 }
