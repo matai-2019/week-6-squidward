@@ -1,5 +1,6 @@
 import React from 'react'
 import data from '../../data/colors'
+import SuitContainer from './SuitContainer'
 const { colors } = data
 
 class App extends React.Component {
@@ -13,6 +14,7 @@ class App extends React.Component {
     return (
     <>
     <h1>Wardrobe Dilema</h1>
+    <SuitContainer />
     </>
     )
   }
