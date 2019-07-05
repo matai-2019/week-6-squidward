@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Jacket ({ colour }) {
+export default function Jacket ({ colour, darkenColour }) {
   return <>
     <svg width="564" height="564" version="1.1" viewBox="0 0 564 564" xmlns="http://www.w3.org/2000/svg">
       <g>
