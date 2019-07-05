@@ -38,9 +38,10 @@ class App extends React.Component {
     return tempColour
   }
 
-  randomColor = key => () => {
+  randomColor = (key, index) => () => {
     const { colorArr } = this.props
-    const i = Math.floor((Math.random() * colorArr.length))
+    let i = Math.floor((Math.random() * colorArr.length))
+    if (index) i = index
     const newState = {}
     newState[key] = colorArr[i]
 
