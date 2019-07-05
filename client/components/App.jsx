@@ -68,7 +68,7 @@ class App extends React.Component {
             <Trousers size={size} darkenColour={this.darkenColour} colour={trousers} />
             <Shoes darkenColour={this.darkenColour} size={size} colour={shoes} />
           </SuitContainer>
-          <Buttons />
+          <Buttons randomColor={this.randomColor} />
         </div>
       </>
     )
