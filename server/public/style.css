@@ -1,11 +1,11 @@
 .svgContainer {
-  position: relative;
+  /* position: relative; */
 }
 
 svg {
-  width: 1000px;
-  height: 1000px;
   position: absolute;
+  width: inherit;
+  height: inherit;
   top: 0px;
   left: 0px;
 }
@@ -21,4 +21,14 @@ svg {
 .shaded {
 
   fill: black
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+}
+
+.controller button {
+  margin-top: 10px;
+
 }
