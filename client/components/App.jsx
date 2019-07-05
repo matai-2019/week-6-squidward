@@ -63,15 +63,17 @@ class App extends React.Component {
       <>
         <h1 className="title is-1" >Wardrobe Dilemma</h1>
         <div className="row is-flex">
-          <WaitIndicator />
-          <SuitContainer>
-            <Jacket darkenColour={this.darkenColour} size={size} colour={jacket}/>
-            <Shirt darkenColour={this.darkenColour} size={size} colour={shirt} />
-            <Tie darkenColour={this.darkenColour} size={size} colour={tie} />
-            <Trousers size={size} darkenColour={this.darkenColour} colour={trousers} />
-            <Shoes darkenColour={this.darkenColour} size={size} colour={shoes} />
-          </SuitContainer>
+          {this.props.isWaiting ? <WaitIndicator /> : <>
+            <SuitContainer>
+              <Jacket darkenColour={this.darkenColour} size={size} colour={jacket}/>
+              <Shirt darkenColour={this.darkenColour} size={size} colour={shirt} />
+              <Tie darkenColour={this.darkenColour} size={size} colour={tie} />
+              <Trousers size={size} darkenColour={this.darkenColour} colour={trousers} />
+              <Shoes darkenColour={this.darkenColour} size={size} colour={shoes} />
+            </SuitContainer>
           <Buttons />
+          </>
+          }
         </div>
       </>
     )
@@ -80,7 +82,8 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    colorArr: state.colorArr
+    colorArr: state.colorArr,
+    isWaiting: state.isWaiting
   }
 }
 

@@ -18,8 +18,9 @@ export const receiveColors = colors => {
 }
 
 export const getColors = () => {
+  console.log("WHY")
   return dispatch => {
     dispatch(requestColors())
-    setTimeout(() => dispatch(receiveColors()), 5000)
+    setTimeout(() => dispatch(receiveColors()), 3000)
   }
 }
