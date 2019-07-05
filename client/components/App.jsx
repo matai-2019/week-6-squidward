@@ -61,17 +61,17 @@ class App extends React.Component {
       shoes } = this.state
     return (
       <>
-        <h1 className="title is-1" >Wardrobe Dilemma</h1>
+          <h1 style={{ display: 'flex', justifyContent: 'center' }} className="title is-1 is-hcentered" >Wardrobe Dilemma</h1>
         <div className="row is-flex">
           {this.props.isWaiting ? <WaitIndicator /> : <>
             <SuitContainer>
-              <Jacket darkenColour={this.darkenColour} size={size} colour={jacket}/>
+              <Jacket darkenColour={this.darkenColour} size={size} colour={jacket} />
               <Shirt darkenColour={this.darkenColour} size={size} colour={shirt} />
               <Tie darkenColour={this.darkenColour} size={size} colour={tie} />
               <Trousers size={size} darkenColour={this.darkenColour} colour={trousers} />
               <Shoes darkenColour={this.darkenColour} size={size} colour={shoes} />
             </SuitContainer>
-          <Buttons randomColor={this.randomColor}/>
+            <Buttons randomColor={this.randomColor} />
           </>
           }
         </div>
