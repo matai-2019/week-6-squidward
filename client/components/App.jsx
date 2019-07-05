@@ -1,4 +1,7 @@
 import React from 'react'
+import { connect } from 'redux'
+
+import WaitIndicator from './WaitIndicator'
 import Jacket from './Jacket'
 import Shirt from './Shirt'
 import Tie from './Tie'
@@ -34,6 +37,7 @@ class App extends React.Component {
       <>
         <h1 className="title is-1" >Wardrobe Dilemma</h1>
         <div className="row is-flex">
+          <WaitIndicator />
           <SuitContainer>
             <Jacket darkenColour={this.darkenColour} colour={colour} />
             <Shirt darkenColour={this.darkenColour} colour={colour} />
