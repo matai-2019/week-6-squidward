@@ -1,26 +1,13 @@
 .svgContainer {
-  /* position: relative; */
+  position: relative;
 }
 
 svg {
   position: absolute;
-  width: inherit;
-  height: inherit;
+  height: 600px;
+  width: 600px;
   top: 0px;
-  left: 0px;
-}
-
-.debug {
-  fill: yellow;
-}
-
-.normal {
-  fill: grey
-}
-
-.shaded {
-
-  fill: black
+  left: -0px;
 }
 
 .controller {
