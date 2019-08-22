@@ -1,0 +1,45 @@
+body {
+  margin-right:20vw;
+  margin-left: 20vw;
+}
+
+.svgContainer {
+  position: relative;
+}
+
+svg {
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  top: 0px;
+  left: -0px;
+}
+
+.controller {
+  display: flex;
+  flex-direction: column;
+}
+
+.controller button {
+  margin-top: 10px;
+
+}
+
+img {
+  width: 100px;
+  margin-top: 5rem;
+  animation: blinker 0.5s linear infinite;
+  border-radius: 50%;
+  border: solid 1px black;
+
+  -webkit-animation: spin 5s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+  position: absolute;
+  right: 46vw;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
